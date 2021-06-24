@@ -1,5 +1,5 @@
 /*The purpose of this module is to provide the back-end for a web app that I created to interface with our company's Syspro pages in a more convenient way*/
-/* Name : RGR_Syspro_Front.js, Written by   : J FOLDING */
+/* Name : Inventory_Landing_Page.js, Written by   : J FOLDING */
 
 //Funtion to read CSV file into an Array
 
