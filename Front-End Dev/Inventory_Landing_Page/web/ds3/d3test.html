@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="U:\Projects\Coding\Syspro_Frontend_Project\files\js\d3-test.js"></script> -->
+    <script language="JavaScript" type="text/javascript" src="U:\Projects\Coding\Syspro_Frontend_Project\files\js\RGR_Syspro_Front.js"></script>
+    <script language="JavaScript" type="text/javascript" src="U:\Projects\Coding\Syspro_Frontend_Project\files\js\d3-test.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <button onclick=csvToArray()>Test</button>
+<script>
+    // write your d3 code here.. 
+    // d3.csv("U:/Projects/Coding/Syspro_Frontend_Project/files/RGR_PCB_List.csv", function(data) {
+    //     console.log(data);
+    // });
+    d3.request("U:/Projects/Coding/Syspro_Frontend_Project/files/RGR_PCB_List.csv")
+  .mimeType("text/csv")
+  .response(function (xhr) { return d3.csvParse(xhr.responseText); })
+  .get(function(data) {
+      console.log(data);
+  });
+</script>
+</body>
+</html>

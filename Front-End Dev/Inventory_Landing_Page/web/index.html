@@ -1,0 +1,170 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/RGR_Syspro_Front.css" media="screen" />
+  <!-- import library to convert CSV to Array -->
+
+  <script language="JavaScript" type="text/javascript" src="/web/scripts/js/jquery.csv.js"></script>
+  <script language="JavaScript" type="text/javascript" src="scripts/js/RGR_Syspro_Front.js"></script>
+  <script language="JavaScript" type="text/javascript" src="scripts/js/logic.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+
+
+<div id="pageWrapper">
+  <div id="maincard" class="maincard">
+    <div id="logoContainer" class="logoContainer">
+      <div class="imgContainer">
+        <img class="logo" src="images/ReutechLogo.png" alt="Reutech Logo">
+      </div>
+    </div>
+    <!-- <div id="nav" class="navBar">         
+        </div> -->
+    <br>
+    <div id="centerContent" class="centerContent">
+      <div>
+        <div class="projectSelector">
+          <div class="pSelectorContainer">
+            <div class="projectSelectorTxt selectorButton-button1" onclick="tableSelect(this)" id="partsTableSelector">PARTS
+            </div>
+            <div class="projectSelectorTxt selectorButton-button2" onclick="tableSelect(this)" id="modulesTableSelector">
+              MODULES</div>
+          </div>
+        </div>
+      </div>
+      <div class="tableContainer">
+        <table id="partsTable" class="table table-hover tableFixHead thead th">
+          <thead>
+            <tr>
+              <th scope="col">Part Number</th>
+              <th scope="col">Description </th>
+            </tr>
+          </thead>
+          <tbody>
+
+
+
+            <tr>
+              <td>XXX-AA-XXXV01.00</td>
+              <td>PART A</td>
+            </tr>
+            <tr>
+              <td>XXX-BB-XXXV01.00</td>
+              <td>PART B</td>
+            </tr>
+            <tr>
+              <td>XXX-CC-XXXV01.00</td>
+              <td>PART C</td>
+            </tr>
+            <tr>
+              <td>XXX-DD-XXXV01.00</td>
+              <td>PART D</td>
+            </tr>
+            <tr>
+              <td>XXX-EE-XXXV01.00</td>
+              <td>PART E</td>
+            </tr>
+            <tr>
+              <td>XXX-FF-XXXV01.00</td>
+              <td>PART F</td>
+            </tr>
+            <tr>
+              <td>XXX-GG-XXXV01.00</td>
+              <td>PART G</td>
+            </tr>
+            <tr>
+              <td>XXX-HH-XXXV01.00</td>
+              <td>PART H</td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="modulesTable" class="table table-hover hidden">
+          <thead>
+            <tr>
+              <th scope="col">Part Number</th>
+              <th scope="col">Description </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>XXX-AM-XXXV01.00</td><td>MODULE A</td></tr>
+<tr><td>XXX-BM-XXXV01.00</td><td>MODULE B</td></tr>
+<tr><td>XXX-CM-XXXV01.00</td><td>MODULE C</td></tr>
+<tr><td>XXX-DM-XXXV01.00</td><td>MODULE D</td></tr>
+<tr><td>XXX-EM-XXXV01.00</td><td>MODULE E</td></tr>
+<tr><td>XXX-FM-XXXV01.00</td><td>MODULE F</td></tr>
+<tr><td>XXX-GM-XXXV01.00</td><td>MODULE G</td></tr>
+<tr><td>XXX-HM-XXXV01.00</td><td>MODULE H</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="selectorContainer">
+
+        <div id="ALL" class="selectorButton" onclick="selectorClick(this)">
+          <div class="selectorButton-button1">
+            <div class="selectorButton-Text">All Jobs</div>
+          </div>
+        </div>
+        <div id="Possibly_Ready" class="selectorButton" onclick="selectorClick(this)">
+          <div class="selectorButton-button2">
+            <div class="selectorButton-Text">Possibly Ready</div>
+          </div>
+        </div>
+        <div id="Completed_Kits" class="selectorButton" onclick="selectorClick(this)">
+          <div class="selectorButton-button3">
+            <div class="selectorButton-Text">Completed Kits</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <div class="well radioContainer radioGrid">
+      <form>
+        <fieldset class="radioRow_1">
+
+          <label class="radioLabel">Warehouse :</label>
+          <label for="radio_ANY" class="radio-inline radioButton">
+            <input type="radio" name="warehouse" value="" checked>Any
+          </label>
+          <label for="radio_EA" class="radio-inline radioButton">
+            <input type="radio" name="warehouse" value="EA">EA
+          </label>
+          <label for="radio_XB" class="radio-inline radioButton">
+            <input type="radio" name="warehouse" value="XB">XB
+          </label>
+          <label for="radio_HG" class="radio-inline radioButton">
+            <input type="radio" name="warehouse" value="HG">HG
+          </label>
+          <label for="radio_XM" class="radio-inline radioButton">
+            <input type="radio" name="warehouse" value="XM">XM
+          </label>
+        </fieldset>
+      </form>
+      <form>
+        <fieldset class="radioRow_2">
+          <label class="radioLabel">Completed :</label>
+          <label for="radio_BLANK" class="radio-inline radioButton">
+            <input type="radio" name="completed" value="" checked>Blank
+          </label>
+          <label for="radio_YES" class="radio-inline radioButton">
+            <input type="radio" name="completed" value="Y">YES
+          </label>
+          <label for="radio_NO" class="radio-inline radioButton">
+            <input type="radio" name="completed" value="N">NO
+          </label>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  // includeHTML()
+  // loadFunctions()
+  addRowHandlers()
+</script>
+
+</html>
