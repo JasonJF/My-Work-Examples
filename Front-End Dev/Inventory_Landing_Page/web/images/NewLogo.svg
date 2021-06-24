@@ -27,7 +27,15 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs849" />
+     id="defs849">
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -42,8 +50,8 @@
      id="namedview847"
      showgrid="false"
      inkscape:zoom="0.7043851"
-     inkscape:cx="297.19964"
-     inkscape:cy="31.648853"
+     inkscape:cx="361.68047"
+     inkscape:cy="-44.377167"
      inkscape:window-x="1592"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -51,8 +59,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer1"
-     inkscape:label="Image 1"
-     sodipodi:insensitive="true">
+     inkscape:label="Image 1">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';fill:#000000;fill-opacity:1;stroke:none"
@@ -75,31 +82,66 @@
          y="9.937746" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:160px;line-height:1.25;font-family:sans-serif;fill:#61be1a;fill-opacity:1;stroke:none"
-       x="8.5180655"
-       y="126.35133"
+       style="font-style:normal;font-weight:normal;font-size:133.333px;line-height:1.25;font-family:sans-serif;fill:#61be1a;fill-opacity:1;stroke:none"
+       x="68.749901"
+       y="127.35519"
        id="text1457"><tspan
          sodipodi:role="line"
          id="tspan1455"
-         x="8.5180655"
-         y="126.35133">SKY</tspan></text>
+         x="68.749901"
+         y="127.35519"
+         style="font-size:133.333px">SKY</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#002469;fill-opacity:1;stroke:none"
-       x="313.74884"
-       y="126.35133"
+       x="322.78363"
+       y="128.35905"
        id="text1465"><tspan
          sodipodi:role="line"
          id="tspan1463"
-         x="313.74884"
-         y="126.35133"
-         style="font-weight:bold;font-size:160px;fill:#002469;fill-opacity:1">TECH</tspan></text>
+         x="322.78363"
+         y="128.35905"
+         style="font-weight:bold;font-size:133.333px;fill:#002469;fill-opacity:1">TECH</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1"
        id="rect1469"
-       width="78.082291"
-       height="21.29517"
-       x="427.32306"
-       y="32.652592" />
+       width="77.904846"
+       height="23.247231"
+       x="419.29214"
+       y="46.706688"
+       ry="6.0336313"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:75.1994px;line-height:125%;font-family:Calibri;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.11996"
+       x="683.21179"
+       y="80.891533"
+       id="text1478"
+       transform="scale(1.03468,0.9664824)"><tspan
+         sodipodi:role="line"
+         x="683.21179"
+         y="80.891533"
+         id="tspan1476"
+         style="stroke-width:5.11996"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:75.1994px;font-family:Calibri;fill:#000000;stroke-width:5.11996"
+           id="tspan1474">™</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-size:75.1994px;line-height:125%;font-family:Calibri;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.11996"
+       x="700.45618"
+       y="203.45552"
+       id="text1484"
+       transform="scale(1.03468,0.96648241)"><tspan
+         sodipodi:role="line"
+         x="700.45618"
+         y="203.45552"
+         id="tspan1482"
+         style="stroke-width:5.11996"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:normal;font-variant:normal;font-weight:400;font-size:75.1994px;font-family:Calibri;fill:#000000;stroke-width:5.11996"
+           id="tspan1480"> </tspan></tspan></text>
   </g>
 </svg>
