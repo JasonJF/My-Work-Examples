@@ -3,8 +3,6 @@
 
 //Funtion to read CSV file into an Array
 
-{
-    /* <script language="JavaScript" type="text/javascript" src="U:\Projects\Coding\Syspro_Frontend_Project\files\js\jquery.csv.js"></script> */ }
 
 function csvToArray() {
 

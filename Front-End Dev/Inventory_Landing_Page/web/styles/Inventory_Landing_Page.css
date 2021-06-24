@@ -1,7 +1,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;  
+  height: 100%;
   /* background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png); */
   background: url(https://github.com/JasonJF/My-Work-Examples/blob/master/Front-End%20Dev/Inventory_Landing_Page/web/images/topographicmap.jpg?raw=true);
   font: 1em sans-serif;
@@ -16,11 +16,11 @@ body {
   height: 100%;
   margin: auto;
   background: white;
-  box-shadow: 0px 12px 27px -2px rgba(0,0,0,0.75);
- }
+  box-shadow: 0px 12px 27px -2px rgba(0, 0, 0, 0.75);
+}
 
 .grid {
-  display: grid;  
+  display: grid;
   max-width: 60vw;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 20% 5% 15% 60%;
@@ -41,11 +41,11 @@ body {
   background-color: #F2F2F2;
   position: relative;
   z-index: 0;
- }
+}
 
 .logoContainer {
   width: 100%;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .imgContainer {
@@ -59,9 +59,6 @@ body {
 
 }
 
-.navElements { 
-  /* navthings go here */
-}
 
 .projectSelector {
   display: flex;
@@ -70,29 +67,29 @@ body {
   align-items: flex-end;
 }
 
-.tableContainer {  
+.tableContainer {
   width: 44vw;
   /* height: 100%; */
   height: 25em;
   overflow-y: scroll;
   background-color: white;
   position: relative;
-  z-index: 2;  
-  cursor: pointer;  
+  z-index: 2;
+  cursor: pointer;
 }
 
 
 .selectorContainer {
   align-self: flex-start;
-  position: relative;  
+  position: relative;
   width: 100%;
   height: 100%;
-  z-index: 0;  
+  z-index: 0;
 }
 
 .radioContainer {
   height: auto;
-  background-color: yellow; 
+  background-color: yellow;
   grid-column: 1 / span 3;
 }
 
@@ -106,7 +103,7 @@ td {
   padding: 5px;
   align-self: center;
   font-size: 1.3rem;
-  
+
 
 }
 
@@ -116,9 +113,10 @@ td {
 }
 
 .table tbody tr:hover td {
-  background-color: #80BF21;  
+  background-color: #80BF21;
   color: white;
 }
+
 .hidden {
   display: none;
 }
@@ -257,6 +255,7 @@ td {
   left: -8rem;
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.75);
 }
+
 /* custom scrollbar */
 
 
@@ -267,17 +266,17 @@ td {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #80BF21; 
+  background: #80BF21;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5C8C2B; 
+  background: #5C8C2B;
 }

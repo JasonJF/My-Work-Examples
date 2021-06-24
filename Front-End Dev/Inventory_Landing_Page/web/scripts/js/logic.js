@@ -53,7 +53,7 @@ function generateLink(stockCode){
 function gotoAllJobs(STOCKNUMBER, WHNUMBER, JOBNUMBER, COMPLETESTATUS) {
     
 
-    var linkText = "http://rrsapp01/Production%20Planning%20Reports/All_Jobs.php?s_StockCode=" + STOCKNUMBER + "&s_Warehouse=" + WHNUMBER + "&s_Job=" + JOBNUMBER + "&s_JobDescription=&s_StockDescription=&s_Complete=" + COMPLETESTATUS + "&s_ConfirmedFlag=&s_DateTaken="
+    var linkText = ""
    
     openInNewTab(linkText);
 }
@@ -68,7 +68,7 @@ function goToPossiblyReady(STOCKNUMBER, WHNUMBER, JOBNUMBER, COMPLETESTATUS) {
     // JOBNUMBER = ""
     // COMPLETESTATUS = radioSelection[1];
 
-    var linkText = "http://rrsapp01/Production%20Planning%20Reports/Possibly_ready_for_population_JobNotTaken.php?s_Warehouse=" + WHNUMBER + "&s_ConfirmedFlag=&s_Job=&s_StockCode=" + STOCKNUMBER + "&s_JobDescription=&s_StockDescription=&s_Alloc_StockCode=&s_Alloc_StockDescription=&s_JobStartDate="
+    var linkText = ""
    
     openInNewTab(linkText);
 }
