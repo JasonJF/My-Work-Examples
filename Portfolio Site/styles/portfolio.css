@@ -1,0 +1,62 @@
+body {
+    background-color: aqua;
+}
+
+.pageContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90vw;
+    /* height: 100vh; */
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    background-color: teal;
+}
+
+.logoContainer {
+    display: flex;
+    background-color: tomato;
+    flex-grow: 1;
+}
+
+.myLinks {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.welcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: lightgreen;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: rgb(39, 74, 170);
+}
+
+.projectsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: slategray;
+}
