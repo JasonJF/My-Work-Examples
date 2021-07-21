@@ -42,7 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    background-color: lightgreen;
+    background-color: ivory;
 }
 
 .aboutContainer {
@@ -60,3 +60,141 @@ body {
     height: 80vh;
     background-color: slategray;
 }
+body{
+    background-color: ivory;
+    
+  }
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    height: 90vh;
+  /*   border-radius: 10px; */
+  }
+  #logoWrapper{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Bebas Neue', cursive;
+    justify-content: flex-end;
+    width: 800px;
+    z-index: 1;
+  }
+  .logoLeftSide{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    height: 100%;
+    width: 480px;
+  }
+  @keyframes movetext {
+    0%{left: -400px;}
+    25%,100% {left: 0px;}
+  }
+  @keyframes moveTextLeft{
+    0%,25%{left: 180px;}
+    35%,100%{left: -15px;}
+  }
+  @keyframes scaleCenterLine{
+    0%{width: 400px;}
+    25%,100%{width: 0px;}
+  }
+  .txtBoxWrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7em;
+    position: relative;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    /* left: -380px; */
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 9px;
+    background-color: ivory;
+    z-index: 3;
+    /* border-radius: 10px; */
+  }
+  .txtBox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    justify-content: flex-start;
+  /*   animation-name: movetext; */
+  /*   animation-duration: 1s; */
+  /*   animation-timing-function: ease-in; */
+  /*   animation-fill-mode: forwards; */
+  /*   animation-iteration-count: infinite; */
+    animation: movetext 3s ease-in forwards infinite;
+    /* border: solid 5px black; */
+    z-index: 4;
+  }
+  .txtBox:after{
+    left: -30px;
+  }
+  #coverbox{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: ivory;
+    z-index: 3;
+  }
+  .logoText{
+    display: flex;
+    position: relative;
+    /* height: 100px; */
+    /* padding: 1px; */
+    margin-top: -26px;
+    margin-bottom: -23px;
+    /* margin-bottom: 30px; */
+  }
+  .centerline {
+    position: absolute;
+    height: 197px;
+    width: 480px;
+    background-color: ivory;
+    border-right: 10px solid red;
+    /* border: 10px solid red; */
+    z-index: 5;
+  /*   animation-name: scaleCenterLine; */
+  /*   animation-duration: 1s; */
+  /*   animation-timing-function: ease-in; */
+  /*   animation-fill-mode: forwards; */
+  /*   animation-iteration-count: infinite; */
+    animation: scaleCenterLine 3s ease-in forwards infinite;
+  }
+  .centerline:after{
+    width: 50px;
+  }
+  .leftTextWrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    margin-top: 9px;
+    left: 180px;
+    justify-content: flex-start;
+    padding-right: 10px;
+    background-color:ivory;
+  /*   animation-name: moveTextLeft; */
+  /*   animation-duration: 1s; */
+  /*   animation-timing-function: ease-in; */
+  /*   animation-fill-mode: forwards; */
+  /*   animation-iteration-count: infinite; */
+  /*   animation-delay: 1s; */
+    animation: moveTextLeft 3s ease-in forwards infinite;
+    
+    z-index: -2;
+  }
+  
+  .skillsText{
+    /* font-family: sans-serif; */
+    font-size: 2em;
+    padding: 4px;
+  }
+  
