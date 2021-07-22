@@ -1,209 +1,243 @@
 body {
-    background-color: aqua;
+  background-color: midnightblue;
+  font-family: system-ui;
 }
-
+.myHeadings_Font{
+  font-family: 'Bebas Neue', cursive;
+}
 .pageContainer {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* width: 80vw; */
+  /* opacity: 0.5; */
 }
 
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 90vw;
-    /* height: 100vh; */
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90vw;
+  /* height: 100vh; */
+  background-color: white;
 }
 
 .navbar {
-    display: flex;
-    height: 10vh;
-    flex-direction: row;
-    background-color: ivory;
+  display: flex;
+  height: 10vh;
+  flex-direction: row;
+  background-color: ivory;
 }
 
 .logoContainer {
-    display: flex;
-    background-color: tomato;
-    flex-grow: 1;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  background-color: ivory;
+  flex-grow: 1;
 }
 
 .myLinksContainer {
-    display: flex;
-    flex-grow: 2;
-    font-family: 'Bebas Neue', cursive;    
-    justify-content: space-around;
-    align-items: center;
-    
+  display: flex;
+  flex-grow: 2;
+  font-family: 'Bebas Neue', cursive;    
+  justify-content: space-around;
+  align-items: center;
+  
 }
 .myLinks{
-    font-size: x-large;
-    color: black;
+  font-size: x-large;
+  color: black;
 }
 .myLinks:hover{
-    border-bottom: solid 8px red;
-    cursor: pointer;
+  border-bottom: solid 8px red;
+  cursor: pointer;
 }
 .welcomeContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-color: ivory;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  background-color: ivory;
 }
 
 .aboutContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    background-color: rgb(39, 74, 170);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 40vh;
+  background-color: ivory;
 }
-
+.myPhotoContainer{
+  display: flex;
+  width: 20vw;
+  height: 20vw;
+  align-items: center;
+  justify-content: center;
+  border: solid 10px red;
+  border-radius: 100%;
+}
+.myPhoto{
+  display: flex;
+  width: 350px;
+  height: 350px;
+}
+.aboutHeader{
+  font-size: xx-large;
+}
+.aboutText{
+  width: 60vw;
+  text-align: center;
+}
+.mySkillsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mySkillsHeading{
+  font-size: xx-large;
+}
 .projectsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background-color: slategray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: slategray;
 }
 body{
-    background-color: ivory;
-    
-  }
-  #wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: green; */
-    height: 90vh;
-  /*   border-radius: 10px; */
-  }
-  #logoWrapper{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Bebas Neue', cursive;
-    justify-content: flex-end;
-    width: 800px;
-    z-index: 1;
-  }
-  .logoLeftSide{
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    height: 100%;
-    width: 480px;
-  }
-  @keyframes movetext {
-    0%{left: -400px;}
-    25%,100% {left: 0px;}
-  }
-  @keyframes moveTextLeft{
-    0%,25%{left: 180px;}
-    35%,100%{left: -15px;}
-  }
-  @keyframes scaleCenterLine{
-    0%{width: 400px;}
-    25%,100%{width: 0px;}
-  }
-  .txtBoxWrapper {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 7em;
-    position: relative;
-    height: 100%;
-    width: 320px;
-    top: 0;
-    /* left: -380px; */
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding-left: 9px;
-    background-color: ivory;
-    z-index: 3;
-    /* border-radius: 10px; */
-  }
-  .txtBox{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 0;
-    justify-content: flex-start;
-  /*   animation-name: movetext; */
-  /*   animation-duration: 1s; */
-  /*   animation-timing-function: ease-in; */
-  /*   animation-fill-mode: forwards; */    
-    animation: movetext 3s ease-in forwards;
-    /* animation-iteration-count: infinite; */
-    /* border: solid 5px black; */
-    z-index: 4;
-  }
-  .txtBox:after{
-    left: -30px;
-  }
-  #coverbox{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: ivory;
-    z-index: 3;
-  }
-  .logoText{
-    display: flex;
-    position: relative;
-    /* height: 100px; */
-    /* padding: 1px; */
-    margin-top: -26px;
-    margin-bottom: -23px;
-    /* margin-bottom: 30px; */
-  }
-  .centerline {
-    position: absolute;
-    height: 197px;
-    width: 480px;
-    background-color: ivory;
-    border-right: 10px solid red;
-    /* border: 10px solid red; */
-    z-index: 5;
-  /*   animation-name: scaleCenterLine; */
-  /*   animation-duration: 1s; */
-  /*   animation-timing-function: ease-in; */
-  /*   animation-fill-mode: forwards; */
-    animation: scaleCenterLine 3s ease-in forwards;
-    /* animation-iteration-count: infinite; */
-  }
-  .centerline:after{
-    width: 50px;
-  }
-  .leftTextWrapper{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: flex-end;
-    margin-top: 9px;
-    left: 180px;
-    justify-content: flex-start;
-    padding-right: 10px;
-    background-color:ivory;
-  /*   animation-name: moveTextLeft; */
-  /*   animation-duration: 1s; */
-  /*   animation-timing-function: ease-in; */
-  /*   animation-fill-mode: forwards; */    
-  /*   animation-delay: 1s; */
-    animation: moveTextLeft 3s ease-in forwards;
-    /* animation-iteration-count: infinite; */
-    
-    z-index: -2;
-  }
+  /* background-color: ivory; */
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  height: 90vh;
+/*   border-radius: 10px; */
+}
+#logoWrapper{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Bebas Neue', cursive;
+  justify-content: flex-end;
+  width: 800px;
+  z-index: 1;
+}
+.logoLeftSide{
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  height: 100%;
+  width: 480px;
+}
+@keyframes movetext {
+  0%{left: -400px;}
+  25%,100% {left: 0px;}
+}
+@keyframes moveTextLeft{
+  0%,25%{left: 180px;}
+  35%,100%{left: -15px;}
+}
+@keyframes scaleCenterLine{
+  0%{width: 400px;}
+  25%,100%{width: 0px;}
+}
+.txtBoxWrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 7em;
+  position: relative;
+  height: 100%;
+  width: 320px;
+  top: 0;
+  /* left: -380px; */
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 9px;
+  background-color: ivory;
+  z-index: 3;
+  /* border-radius: 10px; */
+}
+.txtBox{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  justify-content: flex-start;
+/*   animation-name: movetext; */
+/*   animation-duration: 1s; */
+/*   animation-timing-function: ease-in; */
+/*   animation-fill-mode: forwards; */    
+  animation: movetext 3s ease-in forwards;
+  /* animation-iteration-count: infinite; */
+  /* border: solid 5px black; */
+  z-index: 4;
+}
+.txtBox:after{
+  left: -30px;
+}
+#coverbox{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: ivory;
+  z-index: 3;
+}
+.logoText{
+  display: flex;
+  position: relative;
+  /* height: 100px; */
+  /* padding: 1px; */
+  margin-top: -26px;
+  margin-bottom: -23px;
+  /* margin-bottom: 30px; */
+}
+.centerline {
+  position: absolute;
+  height: 197px;
+  width: 480px;
+  background-color: ivory;
+  border-right: 10px solid red;
+  /* border: 10px solid red; */
+  z-index: 5;
+/*   animation-name: scaleCenterLine; */
+/*   animation-duration: 1s; */
+/*   animation-timing-function: ease-in; */
+/*   animation-fill-mode: forwards; */
+  animation: scaleCenterLine 3s ease-in forwards;
+  /* animation-iteration-count: infinite; */
+}
+.centerline:after{
+  width: 50px;
+}
+.leftTextWrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+  margin-top: 9px;
+  left: 180px;
+  justify-content: flex-start;
+  padding-right: 10px;
+  background-color:ivory;
+/*   animation-name: moveTextLeft; */
+/*   animation-duration: 1s; */
+/*   animation-timing-function: ease-in; */
+/*   animation-fill-mode: forwards; */    
+/*   animation-delay: 1s; */
+  animation: moveTextLeft 3s ease-in forwards;
+  /* animation-iteration-count: infinite; */
   
-  .skillsText{
-    /* font-family: sans-serif; */
-    font-size: 2em;
-    padding: 4px;
-  }
-  
+  z-index: -2;
+}
+
+.skillsText{
+  /* font-family: sans-serif; */
+  font-size: 2em;
+  padding: 4px;
+}
