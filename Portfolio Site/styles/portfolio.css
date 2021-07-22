@@ -21,7 +21,7 @@ body {
     display: flex;
     height: 10vh;
     flex-direction: row;
-    background-color: teal;
+    background-color: ivory;
 }
 
 .logoContainer {
@@ -30,12 +30,21 @@ body {
     flex-grow: 1;
 }
 
-.myLinks {
+.myLinksContainer {
     display: flex;
     flex-grow: 2;
+    font-family: 'Bebas Neue', cursive;    
     justify-content: space-around;
     align-items: center;
-    color: white;
+    
+}
+.myLinks{
+    font-size: x-large;
+    color: black;
+}
+.myLinks:hover{
+    border-bottom: solid 8px red;
+    cursor: pointer;
 }
 .welcomeContainer {
     display: flex;
@@ -127,9 +136,9 @@ body{
   /*   animation-name: movetext; */
   /*   animation-duration: 1s; */
   /*   animation-timing-function: ease-in; */
-  /*   animation-fill-mode: forwards; */
-  /*   animation-iteration-count: infinite; */
-    animation: movetext 3s ease-in forwards infinite;
+  /*   animation-fill-mode: forwards; */    
+    animation: movetext 3s ease-in forwards;
+    /* animation-iteration-count: infinite; */
     /* border: solid 5px black; */
     z-index: 4;
   }
@@ -165,8 +174,8 @@ body{
   /*   animation-duration: 1s; */
   /*   animation-timing-function: ease-in; */
   /*   animation-fill-mode: forwards; */
-  /*   animation-iteration-count: infinite; */
-    animation: scaleCenterLine 3s ease-in forwards infinite;
+    animation: scaleCenterLine 3s ease-in forwards;
+    /* animation-iteration-count: infinite; */
   }
   .centerline:after{
     width: 50px;
@@ -184,10 +193,10 @@ body{
   /*   animation-name: moveTextLeft; */
   /*   animation-duration: 1s; */
   /*   animation-timing-function: ease-in; */
-  /*   animation-fill-mode: forwards; */
-  /*   animation-iteration-count: infinite; */
+  /*   animation-fill-mode: forwards; */    
   /*   animation-delay: 1s; */
-    animation: moveTextLeft 3s ease-in forwards infinite;
+    animation: moveTextLeft 3s ease-in forwards;
+    /* animation-iteration-count: infinite; */
     
     z-index: -2;
   }
