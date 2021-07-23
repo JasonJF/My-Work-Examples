@@ -1,9 +1,14 @@
+:root {
+  --main-accent-color: #d40000;     /*variable to set accent colour across entire page */
+  --main-page-color: ivory;     /*variable to set accent colour across entire page */
+}
 body {
-  background-color: midnightblue;
+  background-color: beige;
   font-family: system-ui;
 }
 .myHeadings_Font{
   font-family: 'Bebas Neue', cursive;
+  font-size: xx-large;
 }
 .pageContainer {
   display: flex;
@@ -17,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 90vw;
+  width: 75vw;
   /* height: 100vh; */
   background-color: white;
 }
@@ -26,15 +31,19 @@ body {
   display: flex;
   height: 10vh;
   flex-direction: row;
-  background-color: ivory;
+  background-color: var(--main-page-color);
 }
 
 .logoContainer {
   display: flex;
   align-content: center;
-  justify-items: center;
-  background-color: ivory;
+  justify-content: center;
+  background-color: var(--main-page-color);
   flex-grow: 1;
+}
+.logo{
+  display: flex;
+  font-size: 4em;
 }
 
 .myLinksContainer {
@@ -50,24 +59,24 @@ body {
   color: black;
 }
 .myLinks:hover{
-  border-bottom: solid 8px red;
+  border-bottom: solid 8px var(--main-accent-color);
   cursor: pointer;
 }
 .welcomeContainer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 50vh;
-  background-color: ivory;
+  height: 60vh;
+  background-color: var(--main-page-color);
 }
 
 .aboutContainer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: end;
   flex-direction: column;
   height: 40vh;
-  background-color: ivory;
+  background-color: var(--main-page-color);
 }
 .myPhotoContainer{
   display: flex;
@@ -75,16 +84,21 @@ body {
   height: 20vw;
   align-items: center;
   justify-content: center;
-  border: solid 10px red;
+  border: solid 10px var(--main-accent-color);
   border-radius: 100%;
+  box-shadow: 10px 10px 12px -6px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px -6px rgba(0,0,0,0.75);
 }
 .myPhoto{
   display: flex;
-  width: 350px;
-  height: 350px;
+  width: 20vw;
+  height: 20vw;
 }
 .aboutHeader{
   font-size: xx-large;
+  display: flex;
+  flex-grow: 0;
 }
 .aboutText{
   width: 60vw;
@@ -92,18 +106,22 @@ body {
 }
 .mySkillsContainer{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--main-page-color);
 }
 .mySkillsHeading{
   font-size: xx-large;
 }
 .projectsContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 80vh;
-  background-color: slategray;
+  overflow: hidden;
+  background-color: var(--main-page-color);
 }
 body{
   /* background-color: ivory; */
@@ -122,8 +140,9 @@ body{
   flex-direction: row;
   font-family: 'Bebas Neue', cursive;
   justify-content: flex-end;
-  width: 800px;
+  width: 50%;
   z-index: 1;
+  overflow: hidden;
 }
 .logoLeftSide{
   display: flex;
@@ -158,7 +177,7 @@ body{
   align-items: flex-start;
   justify-content: flex-end;
   padding-left: 9px;
-  background-color: ivory;
+  background-color: var(--main-page-color);
   z-index: 3;
   /* border-radius: 10px; */
 }
@@ -185,7 +204,7 @@ body{
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: ivory;
+  background-color: var(--main-page-color);
   z-index: 3;
 }
 .logoText{
@@ -201,8 +220,8 @@ body{
   position: absolute;
   height: 197px;
   width: 480px;
-  background-color: ivory;
-  border-right: 10px solid red;
+  background-color: var(--main-page-color);
+  border-right: 10px solid var(--main-accent-color);
   /* border: 10px solid red; */
   z-index: 5;
 /*   animation-name: scaleCenterLine; */
@@ -224,7 +243,7 @@ body{
   left: 180px;
   justify-content: flex-start;
   padding-right: 10px;
-  background-color:ivory;
+  background-color:var(--main-page-color);
 /*   animation-name: moveTextLeft; */
 /*   animation-duration: 1s; */
 /*   animation-timing-function: ease-in; */
@@ -240,4 +259,88 @@ body{
   /* font-family: sans-serif; */
   font-size: 2em;
   padding: 4px;
+}
+.skillsList{
+  display: flex;
+  background-color: var(--main-page-color);
+  width: 50%;
+  justify-content: space-evenly;
+}
+.skillsBlock{
+  display: flex;
+  background-color: var(--main-page-color);
+}
+.about_paragraph_container{
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+}
+#scrollDiv{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.2;
+  /* background-color: red; */
+}
+
+/* this section I got from https://newbedev.com/creating-a-chevron-in-css */
+.Chevron {
+  position:relative;
+  display:block;
+  width: 50px;
+  height: 50px; /*height should be double border*/
+  animation: chevronScroll 1s ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.Chevron::before,
+.Chevron::after {
+  position:absolute;
+  display:block;
+  content:"";
+  border: 27px solid transparent; /*adjust size*/
+}
+/*Change the four instances of 'top' below to rotate (top/right/bottom/left)*/
+.Chevron::before {
+  top: 0px;
+  border-top-color: var(--main-accent-color); /*Chevron Color*/
+}
+.Chevron::after {
+  top:-10px; /*adjust thickness*/
+  border-top-color: var(--main-page-color); /*Match background colour*/
+}
+/*end of chevron section */
+/*Chevron Animation section*/
+@keyframes chevronScroll {
+  0%{top: 0px}
+  100%{top: 20px}
+}
+/* .Chevron:after{
+  top: 20px;
+} */
+/*End of Chevron animation section*/
+.projectsHeading{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.projectsDisplayArea{
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+.projectCard{
+  display: flex;
+  width: auto;
+  height: 230px;
+  box-shadow: -5px 4px 11px 0px rgba(0,0,0,0.43);
+  /* border-radius: 24px; */
+}
+.projectCardImage{
+  max-width: 23vw;
+  /* border-radius: 25px; */
 }

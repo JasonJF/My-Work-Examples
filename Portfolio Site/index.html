@@ -2,7 +2,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="styles\portfolio.css" media="screen">
-  <link rel="stylesheet" href="styles/my_logo.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <html>
@@ -12,7 +12,7 @@
     <div class="mainContainer">
       <div class="navbar">
         <div class="logoContainer">
-          <div id="logo" class="myHeadings_Font">LOGO</div>
+          <div id="logo" class="logo myHeadings_Font">CAPED CREATOR</div>
         </div>
 
         <div class="myLinksContainer">
@@ -46,6 +46,7 @@
       </div>
       <div class="aboutContainer">
         <div id="about_me" class="aboutHeader myHeadings_Font">About Me:</div>
+        <div class="about_paragraph_container">
         <p class="aboutText">
           My name is Jason Folding and I am an Electrical Engineering graduate.
           I love working with the latest technology and my dream is to use my skills and knowledge to inspire the next
@@ -55,13 +56,44 @@
           but also a form of creative expression.
         </p>
       </div>
-      <div class="mySkillsContainer">
-        <div class="mySkillsHeading myHeadings_Font">My knowledge and skillset</div>
+      <div id="scrollDiv">
+        <i class="Chevron"></i>
 
       </div>
+      </div>
+      <div class="mySkillsContainer">
+        <div class="mySkillsHeading myHeadings_Font">My knowledge and skillset</div>
+        <div id="skillsList" class="skillsList">
+          <div class="skillsBlock">
+            <ul>
+              <li>HTML</li>
+              <li>JAVASCRIPT</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="skillsBlock">
+              <ul>
+                <li>PYTHON</li>
+                <li>ARDUINO</li>
+                <li>ELECTRONICS</li>
+              </ul>
+          </div>
+          <div class="skillsBlock">
+            <ul>
+              <li>PHOTOGRAPHY</li>
+              <li>PHOTO EDITING</li>
+              <li>3D MODELING</li>
+            </ul>
+        </div>
+        </div>
+      </div>
       <div class="projectsContainer">
-        <div class="projectsText">My Projects</div>
-        <div class="projectDisplays"></div>
+        <div class="projectsHeading myHeadings_Font">My Projects</div>
+        <div class="projectsDisplayArea">
+          <div class="projectCard"><img id="project1" class="projectCardImage" src="images\Project-1.png"></div>
+          <div class="projectCard"><img id="project2" class="projectCardImage" src="images\Project-2.png"></div>
+          <div class="projectCard"><img id="project3" class="projectCardImage" src="images\Project-3.png"></div>
+        </div>
       </div>
     </div>
   </div>
